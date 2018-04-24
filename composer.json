@@ -28,7 +28,7 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "GraphHopper\\Swagger\\Client\\" : "lib/" }
+        "psr-4": { "GraphHopper\\Swagger\\Client\\" : "src/" }
     },
     "autoload-dev": {
         "psr-4": { "GraphHopper\\Swagger\\Client\\" : "test/" }
