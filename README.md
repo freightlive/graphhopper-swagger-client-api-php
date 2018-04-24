@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com//graphhopper-swagger-client-api-php.git"
+      "url": "https://github.com/GraphHopper/graphhopper-swagger-client-api-php.git"
     }
   ],
   "require": {
-    "/graphhopper-swagger-client-api-php": "*@dev"
+    "GraphHopper/graphhopper-swagger-client-api-php": "*@dev"
   }
 }
 ```
