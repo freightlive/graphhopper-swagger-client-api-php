@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper\Swagger\Client
+ * @package  GraphHopper
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Swagger\Client\Model;
+namespace GraphHopper\Model;
 
 use \ArrayAccess;
-use \GraphHopper\Swagger\Client\ObjectSerializer;
+use \GraphHopper\ObjectSerializer;
 
 /**
  * Request Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper\Swagger\Client
+ * @package     GraphHopper
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,15 +56,15 @@ class Request implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'vehicles' => '\GraphHopper\Swagger\Client\Model\Vehicle[]',
-        'vehicle_types' => '\GraphHopper\Swagger\Client\Model\VehicleType[]',
-        'services' => '\GraphHopper\Swagger\Client\Model\Service[]',
-        'shipments' => '\GraphHopper\Swagger\Client\Model\Shipment[]',
-        'relations' => '\GraphHopper\Swagger\Client\Model\Relation[]',
-        'algorithm' => '\GraphHopper\Swagger\Client\Model\Algorithm',
-        'objectives' => '\GraphHopper\Swagger\Client\Model\Objective[]',
-        'cost_matrices' => '\GraphHopper\Swagger\Client\Model\CostMatrix[]',
-        'configuration' => '\GraphHopper\Swagger\Client\Model\Configuration'
+        'vehicles' => '\GraphHopper\Model\Vehicle[]',
+        'vehicle_types' => '\GraphHopper\Model\VehicleType[]',
+        'services' => '\GraphHopper\Model\Service[]',
+        'shipments' => '\GraphHopper\Model\Shipment[]',
+        'relations' => '\GraphHopper\Model\Relation[]',
+        'algorithm' => '\GraphHopper\Model\Algorithm',
+        'objectives' => '\GraphHopper\Model\Objective[]',
+        'cost_matrices' => '\GraphHopper\Model\CostMatrix[]',
+        'configuration' => '\GraphHopper\Model\Configuration'
     ];
 
     /**
@@ -255,7 +255,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Gets vehicles
      *
-     * @return \GraphHopper\Swagger\Client\Model\Vehicle[]
+     * @return \GraphHopper\Model\Vehicle[]
      */
     public function getVehicles()
     {
@@ -265,7 +265,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Sets vehicles
      *
-     * @param \GraphHopper\Swagger\Client\Model\Vehicle[] $vehicles An array of vehicles that can be employed
+     * @param \GraphHopper\Model\Vehicle[] $vehicles An array of vehicles that can be employed
      *
      * @return $this
      */
@@ -279,7 +279,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Gets vehicle_types
      *
-     * @return \GraphHopper\Swagger\Client\Model\VehicleType[]
+     * @return \GraphHopper\Model\VehicleType[]
      */
     public function getVehicleTypes()
     {
@@ -289,7 +289,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Sets vehicle_types
      *
-     * @param \GraphHopper\Swagger\Client\Model\VehicleType[] $vehicle_types An array of vehicle types
+     * @param \GraphHopper\Model\VehicleType[] $vehicle_types An array of vehicle types
      *
      * @return $this
      */
@@ -303,7 +303,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Gets services
      *
-     * @return \GraphHopper\Swagger\Client\Model\Service[]
+     * @return \GraphHopper\Model\Service[]
      */
     public function getServices()
     {
@@ -313,7 +313,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Sets services
      *
-     * @param \GraphHopper\Swagger\Client\Model\Service[] $services An array of services
+     * @param \GraphHopper\Model\Service[] $services An array of services
      *
      * @return $this
      */
@@ -327,7 +327,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Gets shipments
      *
-     * @return \GraphHopper\Swagger\Client\Model\Shipment[]
+     * @return \GraphHopper\Model\Shipment[]
      */
     public function getShipments()
     {
@@ -337,7 +337,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Sets shipments
      *
-     * @param \GraphHopper\Swagger\Client\Model\Shipment[] $shipments An array of shipments
+     * @param \GraphHopper\Model\Shipment[] $shipments An array of shipments
      *
      * @return $this
      */
@@ -351,7 +351,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Gets relations
      *
-     * @return \GraphHopper\Swagger\Client\Model\Relation[]
+     * @return \GraphHopper\Model\Relation[]
      */
     public function getRelations()
     {
@@ -361,7 +361,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Sets relations
      *
-     * @param \GraphHopper\Swagger\Client\Model\Relation[] $relations An array of relations
+     * @param \GraphHopper\Model\Relation[] $relations An array of relations
      *
      * @return $this
      */
@@ -375,7 +375,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Gets algorithm
      *
-     * @return \GraphHopper\Swagger\Client\Model\Algorithm
+     * @return \GraphHopper\Model\Algorithm
      */
     public function getAlgorithm()
     {
@@ -385,7 +385,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Sets algorithm
      *
-     * @param \GraphHopper\Swagger\Client\Model\Algorithm $algorithm algorithm
+     * @param \GraphHopper\Model\Algorithm $algorithm algorithm
      *
      * @return $this
      */
@@ -399,7 +399,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Gets objectives
      *
-     * @return \GraphHopper\Swagger\Client\Model\Objective[]
+     * @return \GraphHopper\Model\Objective[]
      */
     public function getObjectives()
     {
@@ -409,7 +409,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Sets objectives
      *
-     * @param \GraphHopper\Swagger\Client\Model\Objective[] $objectives An array of objectives
+     * @param \GraphHopper\Model\Objective[] $objectives An array of objectives
      *
      * @return $this
      */
@@ -423,7 +423,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Gets cost_matrices
      *
-     * @return \GraphHopper\Swagger\Client\Model\CostMatrix[]
+     * @return \GraphHopper\Model\CostMatrix[]
      */
     public function getCostMatrices()
     {
@@ -433,7 +433,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Sets cost_matrices
      *
-     * @param \GraphHopper\Swagger\Client\Model\CostMatrix[] $cost_matrices An array of cost matrices
+     * @param \GraphHopper\Model\CostMatrix[] $cost_matrices An array of cost matrices
      *
      * @return $this
      */
@@ -447,7 +447,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Gets configuration
      *
-     * @return \GraphHopper\Swagger\Client\Model\Configuration
+     * @return \GraphHopper\Model\Configuration
      */
     public function getConfiguration()
     {
@@ -457,7 +457,7 @@ class Request implements ModelInterface, ArrayAccess
     /**
      * Sets configuration
      *
-     * @param \GraphHopper\Swagger\Client\Model\Configuration $configuration configuration
+     * @param \GraphHopper\Model\Configuration $configuration configuration
      *
      * @return $this
      */

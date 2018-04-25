@@ -1,4 +1,4 @@
-# GraphHopper\Swagger\Client\IsochroneApi
+# GraphHopper\IsochroneApi
 
 All URIs are relative to *https://graphhopper.com/api/1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **isochroneGet**
-> \GraphHopper\Swagger\Client\Model\IsochroneResponse isochroneGet($point, $key, $time_limit, $distance_limit, $vehicle, $buckets, $reverse_flow)
+> \GraphHopper\Model\IsochroneResponse isochroneGet($point, $key, $time_limit, $distance_limit, $vehicle, $buckets, $reverse_flow)
 
 Isochrone Request
 
@@ -19,7 +19,7 @@ The GraphHopper Isochrone API allows calculating an isochrone of a locations mea
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new GraphHopper\Swagger\Client\Api\IsochroneApi(
+$apiInstance = new GraphHopper\Api\IsochroneApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\GraphHopper\Swagger\Client\Model\IsochroneResponse**](../Model/IsochroneResponse.md)
+[**\GraphHopper\Model\IsochroneResponse**](../Model/IsochroneResponse.md)
 
 ### Authorization
 

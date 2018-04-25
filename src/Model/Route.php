@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper\Swagger\Client
+ * @package  GraphHopper
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Swagger\Client\Model;
+namespace GraphHopper\Model;
 
 use \ArrayAccess;
-use \GraphHopper\Swagger\Client\ObjectSerializer;
+use \GraphHopper\ObjectSerializer;
 
 /**
  * Route Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper\Swagger\Client
+ * @package     GraphHopper
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class Route implements ModelInterface, ArrayAccess
         'transport_time' => 'int',
         'completion_time' => 'int',
         'waiting_time' => 'int',
-        'activities' => '\GraphHopper\Swagger\Client\Model\Activity[]',
-        'points' => '\GraphHopper\Swagger\Client\Model\RoutePoint[]'
+        'activities' => '\GraphHopper\Model\Activity[]',
+        'points' => '\GraphHopper\Model\RoutePoint[]'
     ];
 
     /**
@@ -363,7 +363,7 @@ class Route implements ModelInterface, ArrayAccess
     /**
      * Gets activities
      *
-     * @return \GraphHopper\Swagger\Client\Model\Activity[]
+     * @return \GraphHopper\Model\Activity[]
      */
     public function getActivities()
     {
@@ -373,7 +373,7 @@ class Route implements ModelInterface, ArrayAccess
     /**
      * Sets activities
      *
-     * @param \GraphHopper\Swagger\Client\Model\Activity[] $activities array of activities
+     * @param \GraphHopper\Model\Activity[] $activities array of activities
      *
      * @return $this
      */
@@ -387,7 +387,7 @@ class Route implements ModelInterface, ArrayAccess
     /**
      * Gets points
      *
-     * @return \GraphHopper\Swagger\Client\Model\RoutePoint[]
+     * @return \GraphHopper\Model\RoutePoint[]
      */
     public function getPoints()
     {
@@ -397,7 +397,7 @@ class Route implements ModelInterface, ArrayAccess
     /**
      * Sets points
      *
-     * @param \GraphHopper\Swagger\Client\Model\RoutePoint[] $points array of route planning points
+     * @param \GraphHopper\Model\RoutePoint[] $points array of route planning points
      *
      * @return $this
      */

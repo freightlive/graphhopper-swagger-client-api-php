@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper\Swagger\Client
+ * @package  GraphHopper
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Swagger\Client\API;
+namespace GraphHopper\API;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use GraphHopper\Swagger\Client\ApiException;
-use GraphHopper\Swagger\Client\Configuration;
-use GraphHopper\Swagger\Client\HeaderSelector;
-use GraphHopper\Swagger\Client\ObjectSerializer;
+use GraphHopper\ApiException;
+use GraphHopper\Configuration;
+use GraphHopper\HeaderSelector;
+use GraphHopper\ObjectSerializer;
 
 /**
  * IsochroneApi Class Doc Comment
  *
  * @category Class
- * @package  GraphHopper\Swagger\Client
+ * @package  GraphHopper
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -96,9 +96,9 @@ class IsochroneApi
      * @param  int $buckets For how many sub intervals an additional polygon should be calculated. (optional, default to 1)
      * @param  bool $reverse_flow If &#x60;false&#x60; the flow goes from point to the polygon, if &#x60;true&#x60; the flow goes from the polygon \&quot;inside\&quot; to the point. Example usage for &#x60;false&#x60;&amp;#58; *How many potential customer can be reached within 30min travel time from your store* vs. &#x60;true&#x60;&amp;#58; *How many customers can reach your store within 30min travel time.* (optional, default to false)
      *
-     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
+     * @throws \GraphHopper\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \GraphHopper\Swagger\Client\Model\IsochroneResponse
+     * @return \GraphHopper\Model\IsochroneResponse
      */
     public function isochroneGet($point, $key, $time_limit = '600', $distance_limit = '-1', $vehicle = 'car', $buckets = '1', $reverse_flow = 'false')
     {
@@ -119,13 +119,13 @@ class IsochroneApi
      * @param  int $buckets For how many sub intervals an additional polygon should be calculated. (optional, default to 1)
      * @param  bool $reverse_flow If &#x60;false&#x60; the flow goes from point to the polygon, if &#x60;true&#x60; the flow goes from the polygon \&quot;inside\&quot; to the point. Example usage for &#x60;false&#x60;&amp;#58; *How many potential customer can be reached within 30min travel time from your store* vs. &#x60;true&#x60;&amp;#58; *How many customers can reach your store within 30min travel time.* (optional, default to false)
      *
-     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
+     * @throws \GraphHopper\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \GraphHopper\Swagger\Client\Model\IsochroneResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GraphHopper\Model\IsochroneResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function isochroneGetWithHttpInfo($point, $key, $time_limit = '600', $distance_limit = '-1', $vehicle = 'car', $buckets = '1', $reverse_flow = 'false')
     {
-        $returnType = '\GraphHopper\Swagger\Client\Model\IsochroneResponse';
+        $returnType = '\GraphHopper\Model\IsochroneResponse';
         $request = $this->isochroneGetRequest($point, $key, $time_limit, $distance_limit, $vehicle, $buckets, $reverse_flow);
 
         try {
@@ -177,7 +177,7 @@ class IsochroneApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper\Swagger\Client\Model\IsochroneResponse',
+                        '\GraphHopper\Model\IsochroneResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class IsochroneApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper\Swagger\Client\Model\GHError',
+                        '\GraphHopper\Model\GHError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class IsochroneApi
      */
     public function isochroneGetAsyncWithHttpInfo($point, $key, $time_limit = '600', $distance_limit = '-1', $vehicle = 'car', $buckets = '1', $reverse_flow = 'false')
     {
-        $returnType = '\GraphHopper\Swagger\Client\Model\IsochroneResponse';
+        $returnType = '\GraphHopper\Model\IsochroneResponse';
         $request = $this->isochroneGetRequest($point, $key, $time_limit, $distance_limit, $vehicle, $buckets, $reverse_flow);
 
         return $this->client

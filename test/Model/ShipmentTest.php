@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper\Swagger\Client
+ * @package  GraphHopper
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace GraphHopper\Swagger\Client;
+namespace GraphHopper;
 
 /**
  * ShipmentTest Class Doc Comment
@@ -35,7 +35,7 @@ namespace GraphHopper\Swagger\Client;
  * @category    Class */
 // * @description Shipment
 /**
- * @package     GraphHopper\Swagger\Client
+ * @package     GraphHopper
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper\Swagger\Client
+ * @package  GraphHopper
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Swagger\Client\API;
+namespace GraphHopper\API;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use GraphHopper\Swagger\Client\ApiException;
-use GraphHopper\Swagger\Client\Configuration;
-use GraphHopper\Swagger\Client\HeaderSelector;
-use GraphHopper\Swagger\Client\ObjectSerializer;
+use GraphHopper\ApiException;
+use GraphHopper\Configuration;
+use GraphHopper\HeaderSelector;
+use GraphHopper\ObjectSerializer;
 
 /**
  * VrpApi Class Doc Comment
  *
  * @category Class
- * @package  GraphHopper\Swagger\Client
+ * @package  GraphHopper
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -89,11 +89,11 @@ class VrpApi
      * Solves vehicle routing problems
      *
      * @param  string $key your API key (required)
-     * @param  \GraphHopper\Swagger\Client\Model\Request $body Request object that contains the problem to be solved (required)
+     * @param  \GraphHopper\Model\Request $body Request object that contains the problem to be solved (required)
      *
-     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
+     * @throws \GraphHopper\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \GraphHopper\Swagger\Client\Model\JobId
+     * @return \GraphHopper\Model\JobId
      */
     public function postVrp($key, $body)
     {
@@ -107,15 +107,15 @@ class VrpApi
      * Solves vehicle routing problems
      *
      * @param  string $key your API key (required)
-     * @param  \GraphHopper\Swagger\Client\Model\Request $body Request object that contains the problem to be solved (required)
+     * @param  \GraphHopper\Model\Request $body Request object that contains the problem to be solved (required)
      *
-     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
+     * @throws \GraphHopper\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \GraphHopper\Swagger\Client\Model\JobId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GraphHopper\Model\JobId, HTTP status code, HTTP response headers (array of strings)
      */
     public function postVrpWithHttpInfo($key, $body)
     {
-        $returnType = '\GraphHopper\Swagger\Client\Model\JobId';
+        $returnType = '\GraphHopper\Model\JobId';
         $request = $this->postVrpRequest($key, $body);
 
         try {
@@ -167,7 +167,7 @@ class VrpApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper\Swagger\Client\Model\JobId',
+                        '\GraphHopper\Model\JobId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -183,7 +183,7 @@ class VrpApi
      * Solves vehicle routing problems
      *
      * @param  string $key your API key (required)
-     * @param  \GraphHopper\Swagger\Client\Model\Request $body Request object that contains the problem to be solved (required)
+     * @param  \GraphHopper\Model\Request $body Request object that contains the problem to be solved (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,14 +204,14 @@ class VrpApi
      * Solves vehicle routing problems
      *
      * @param  string $key your API key (required)
-     * @param  \GraphHopper\Swagger\Client\Model\Request $body Request object that contains the problem to be solved (required)
+     * @param  \GraphHopper\Model\Request $body Request object that contains the problem to be solved (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postVrpAsyncWithHttpInfo($key, $body)
     {
-        $returnType = '\GraphHopper\Swagger\Client\Model\JobId';
+        $returnType = '\GraphHopper\Model\JobId';
         $request = $this->postVrpRequest($key, $body);
 
         return $this->client
@@ -255,7 +255,7 @@ class VrpApi
      * Create request for operation 'postVrp'
      *
      * @param  string $key your API key (required)
-     * @param  \GraphHopper\Swagger\Client\Model\Request $body Request object that contains the problem to be solved (required)
+     * @param  \GraphHopper\Model\Request $body Request object that contains the problem to be solved (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

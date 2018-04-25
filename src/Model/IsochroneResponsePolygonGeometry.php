@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper\Swagger\Client
+ * @package  GraphHopper
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Swagger\Client\Model;
+namespace GraphHopper\Model;
 
 use \ArrayAccess;
-use \GraphHopper\Swagger\Client\ObjectSerializer;
+use \GraphHopper\ObjectSerializer;
 
 /**
  * IsochroneResponsePolygonGeometry Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper\Swagger\Client
+ * @package     GraphHopper
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class IsochroneResponsePolygonGeometry implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'type' => 'string',
-        'coordinates' => '\GraphHopper\Swagger\Client\Model\ResponseCoordinatesArray[]'
+        'coordinates' => '\GraphHopper\Model\ResponseCoordinatesArray[]'
     ];
 
     /**
@@ -237,7 +237,7 @@ class IsochroneResponsePolygonGeometry implements ModelInterface, ArrayAccess
     /**
      * Gets coordinates
      *
-     * @return \GraphHopper\Swagger\Client\Model\ResponseCoordinatesArray[]
+     * @return \GraphHopper\Model\ResponseCoordinatesArray[]
      */
     public function getCoordinates()
     {
@@ -247,7 +247,7 @@ class IsochroneResponsePolygonGeometry implements ModelInterface, ArrayAccess
     /**
      * Sets coordinates
      *
-     * @param \GraphHopper\Swagger\Client\Model\ResponseCoordinatesArray[] $coordinates coordinates
+     * @param \GraphHopper\Model\ResponseCoordinatesArray[] $coordinates coordinates
      *
      * @return $this
      */

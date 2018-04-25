@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper\Swagger\Client
+ * @package  GraphHopper
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Swagger\Client\Model;
+namespace GraphHopper\Model;
 
 use \ArrayAccess;
-use \GraphHopper\Swagger\Client\ObjectSerializer;
+use \GraphHopper\ObjectSerializer;
 
 /**
  * RouteResponsePath Class Doc Comment
  *
  * @category Class
  * @description A found path
- * @package     GraphHopper\Swagger\Client
+ * @package     GraphHopper
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -61,11 +61,11 @@ class RouteResponsePath implements ModelInterface, ArrayAccess
         'time' => 'int',
         'ascend' => 'double',
         'descend' => 'double',
-        'points' => '\GraphHopper\Swagger\Client\Model\ResponseCoordinates',
+        'points' => '\GraphHopper\Model\ResponseCoordinates',
         'points_encoded' => 'bool',
         'bbox' => 'double[]',
-        'snapped_waypoints' => '\GraphHopper\Swagger\Client\Model\ResponseCoordinates',
-        'instructions' => '\GraphHopper\Swagger\Client\Model\ResponseInstructions',
+        'snapped_waypoints' => '\GraphHopper\Model\ResponseCoordinates',
+        'instructions' => '\GraphHopper\Model\ResponseInstructions',
         'details' => 'object'
     ];
 
@@ -358,7 +358,7 @@ class RouteResponsePath implements ModelInterface, ArrayAccess
     /**
      * Gets points
      *
-     * @return \GraphHopper\Swagger\Client\Model\ResponseCoordinates
+     * @return \GraphHopper\Model\ResponseCoordinates
      */
     public function getPoints()
     {
@@ -368,7 +368,7 @@ class RouteResponsePath implements ModelInterface, ArrayAccess
     /**
      * Sets points
      *
-     * @param \GraphHopper\Swagger\Client\Model\ResponseCoordinates $points points
+     * @param \GraphHopper\Model\ResponseCoordinates $points points
      *
      * @return $this
      */
@@ -430,7 +430,7 @@ class RouteResponsePath implements ModelInterface, ArrayAccess
     /**
      * Gets snapped_waypoints
      *
-     * @return \GraphHopper\Swagger\Client\Model\ResponseCoordinates
+     * @return \GraphHopper\Model\ResponseCoordinates
      */
     public function getSnappedWaypoints()
     {
@@ -440,7 +440,7 @@ class RouteResponsePath implements ModelInterface, ArrayAccess
     /**
      * Sets snapped_waypoints
      *
-     * @param \GraphHopper\Swagger\Client\Model\ResponseCoordinates $snapped_waypoints snapped_waypoints
+     * @param \GraphHopper\Model\ResponseCoordinates $snapped_waypoints snapped_waypoints
      *
      * @return $this
      */
@@ -454,7 +454,7 @@ class RouteResponsePath implements ModelInterface, ArrayAccess
     /**
      * Gets instructions
      *
-     * @return \GraphHopper\Swagger\Client\Model\ResponseInstructions
+     * @return \GraphHopper\Model\ResponseInstructions
      */
     public function getInstructions()
     {
@@ -464,7 +464,7 @@ class RouteResponsePath implements ModelInterface, ArrayAccess
     /**
      * Sets instructions
      *
-     * @param \GraphHopper\Swagger\Client\Model\ResponseInstructions $instructions instructions
+     * @param \GraphHopper\Model\ResponseInstructions $instructions instructions
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# GraphHopper\Swagger\Client\SolutionApi
+# GraphHopper\SolutionApi
 
 All URIs are relative to *https://graphhopper.com/api/1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSolution**
-> \GraphHopper\Swagger\Client\Model\Response getSolution($key, $job_id)
+> \GraphHopper\Model\Response getSolution($key, $job_id)
 
 Return the solution associated to the jobId
 
@@ -19,7 +19,7 @@ This endpoint returns the solution of a large problems. You can fetch it with th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new GraphHopper\Swagger\Client\Api\SolutionApi(
+$apiInstance = new GraphHopper\Api\SolutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\GraphHopper\Swagger\Client\Model\Response**](../Model/Response.md)
+[**\GraphHopper\Model\Response**](../Model/Response.md)
 
 ### Authorization
 
