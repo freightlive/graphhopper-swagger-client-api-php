@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **waiting_time** | **int** | total waiting time in seconds | [optional] 
 **no_vehicles** | **int** | number of employed vehicles | [optional] 
 **no_unassigned** | **int** | number of jobs that could not be assigned to final solution | [optional] 
-**routes** | [**\GraphHopper\Model\Route[]**](Route.md) | An array of routes | [optional] 
-**unassigned** | [**\GraphHopper\Model\SolutionUnassigned**](SolutionUnassigned.md) |  | [optional] 
+**routes** | [**\GraphHopper/Swagger/Client\Model\Route[]**](Route.md) | An array of routes | [optional] 
+**unassigned** | [**\GraphHopper/Swagger/Client\Model\SolutionUnassigned**](SolutionUnassigned.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

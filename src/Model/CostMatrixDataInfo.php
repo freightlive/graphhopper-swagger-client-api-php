@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Model;
+namespace GraphHopper/Swagger/Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper\ObjectSerializer;
+use \GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * CostMatrixDataInfo Class Doc Comment
  *
  * @category Class
  * @description Additional information for your request
- * @package     GraphHopper
+ * @package     GraphHopper/Swagger/Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

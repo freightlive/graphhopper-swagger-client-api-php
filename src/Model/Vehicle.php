@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Model;
+namespace GraphHopper/Swagger/Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper\ObjectSerializer;
+use \GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * Vehicle Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper
+ * @package     GraphHopper/Swagger/Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class Vehicle implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'vehicle_id' => 'string',
         'type_id' => 'string',
-        'start_address' => '\GraphHopper\Model\Address',
-        'end_address' => '\GraphHopper\Model\Address',
-        'break' => '\GraphHopper\Model\ModelBreak',
+        'start_address' => '\GraphHopper/Swagger/Client\Model\Address',
+        'end_address' => '\GraphHopper/Swagger/Client\Model\Address',
+        'break' => '\GraphHopper/Swagger/Client\Model\ModelBreak',
         'return_to_depot' => 'bool',
         'earliest_start' => 'int',
         'latest_end' => 'int',
@@ -327,7 +327,7 @@ class Vehicle implements ModelInterface, ArrayAccess
     /**
      * Gets start_address
      *
-     * @return \GraphHopper\Model\Address
+     * @return \GraphHopper/Swagger/Client\Model\Address
      */
     public function getStartAddress()
     {
@@ -337,7 +337,7 @@ class Vehicle implements ModelInterface, ArrayAccess
     /**
      * Sets start_address
      *
-     * @param \GraphHopper\Model\Address $start_address start_address
+     * @param \GraphHopper/Swagger/Client\Model\Address $start_address start_address
      *
      * @return $this
      */
@@ -351,7 +351,7 @@ class Vehicle implements ModelInterface, ArrayAccess
     /**
      * Gets end_address
      *
-     * @return \GraphHopper\Model\Address
+     * @return \GraphHopper/Swagger/Client\Model\Address
      */
     public function getEndAddress()
     {
@@ -361,7 +361,7 @@ class Vehicle implements ModelInterface, ArrayAccess
     /**
      * Sets end_address
      *
-     * @param \GraphHopper\Model\Address $end_address end_address
+     * @param \GraphHopper/Swagger/Client\Model\Address $end_address end_address
      *
      * @return $this
      */
@@ -375,7 +375,7 @@ class Vehicle implements ModelInterface, ArrayAccess
     /**
      * Gets break
      *
-     * @return \GraphHopper\Model\ModelBreak
+     * @return \GraphHopper/Swagger/Client\Model\ModelBreak
      */
     public function getBreak()
     {
@@ -385,7 +385,7 @@ class Vehicle implements ModelInterface, ArrayAccess
     /**
      * Sets break
      *
-     * @param \GraphHopper\Model\ModelBreak $break break
+     * @param \GraphHopper/Swagger/Client\Model\ModelBreak $break break
      *
      * @return $this
      */

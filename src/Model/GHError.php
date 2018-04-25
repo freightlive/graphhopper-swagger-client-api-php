@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Model;
+namespace GraphHopper/Swagger/Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper\ObjectSerializer;
+use \GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * GHError Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper
+ * @package     GraphHopper/Swagger/Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GHError implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'code' => 'int',
         'message' => 'string',
-        'hints' => '\GraphHopper\Model\GHErrorHints[]'
+        'hints' => '\GraphHopper/Swagger/Client\Model\GHErrorHints[]'
     ];
 
     /**
@@ -267,7 +267,7 @@ class GHError implements ModelInterface, ArrayAccess
     /**
      * Gets hints
      *
-     * @return \GraphHopper\Model\GHErrorHints[]
+     * @return \GraphHopper/Swagger/Client\Model\GHErrorHints[]
      */
     public function getHints()
     {
@@ -277,7 +277,7 @@ class GHError implements ModelInterface, ArrayAccess
     /**
      * Sets hints
      *
-     * @param \GraphHopper\Model\GHErrorHints[] $hints hints
+     * @param \GraphHopper/Swagger/Client\Model\GHErrorHints[] $hints hints
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Model;
+namespace GraphHopper/Swagger/Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper\ObjectSerializer;
+use \GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * IsochroneResponse Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper
+ * @package     GraphHopper/Swagger/Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class IsochroneResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'polygons' => '\GraphHopper\Model\IsochroneResponsePolygon[]',
+        'polygons' => '\GraphHopper/Swagger/Client\Model\IsochroneResponsePolygon[]',
         'copyrights' => 'string[]'
     ];
 
@@ -213,7 +213,7 @@ class IsochroneResponse implements ModelInterface, ArrayAccess
     /**
      * Gets polygons
      *
-     * @return \GraphHopper\Model\IsochroneResponsePolygon[]
+     * @return \GraphHopper/Swagger/Client\Model\IsochroneResponsePolygon[]
      */
     public function getPolygons()
     {
@@ -223,7 +223,7 @@ class IsochroneResponse implements ModelInterface, ArrayAccess
     /**
      * Sets polygons
      *
-     * @param \GraphHopper\Model\IsochroneResponsePolygon[] $polygons polygons
+     * @param \GraphHopper/Swagger/Client\Model\IsochroneResponsePolygon[] $polygons polygons
      *
      * @return $this
      */

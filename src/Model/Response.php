@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Model;
+namespace GraphHopper/Swagger/Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper\ObjectSerializer;
+use \GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * Response Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper
+ * @package     GraphHopper/Swagger/Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class Response implements ModelInterface, ArrayAccess
         'status' => 'string',
         'waiting_in_queue' => 'int',
         'processing_time' => 'int',
-        'solution' => '\GraphHopper\Model\Solution'
+        'solution' => '\GraphHopper/Swagger/Client\Model\Solution'
     ];
 
     /**
@@ -395,7 +395,7 @@ class Response implements ModelInterface, ArrayAccess
     /**
      * Gets solution
      *
-     * @return \GraphHopper\Model\Solution
+     * @return \GraphHopper/Swagger/Client\Model\Solution
      */
     public function getSolution()
     {
@@ -405,7 +405,7 @@ class Response implements ModelInterface, ArrayAccess
     /**
      * Sets solution
      *
-     * @param \GraphHopper\Model\Solution $solution the solution. only available if status field indicates finished
+     * @param \GraphHopper/Swagger/Client\Model\Solution $solution the solution. only available if status field indicates finished
      *
      * @return $this
      */

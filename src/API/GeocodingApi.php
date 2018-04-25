@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\API;
+namespace GraphHopper/Swagger/Client\API;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use GraphHopper\ApiException;
-use GraphHopper\Configuration;
-use GraphHopper\HeaderSelector;
-use GraphHopper\ObjectSerializer;
+use GraphHopper/Swagger/Client\ApiException;
+use GraphHopper/Swagger/Client\Configuration;
+use GraphHopper/Swagger/Client\HeaderSelector;
+use GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * GeocodingApi Class Doc Comment
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -96,9 +96,9 @@ class GeocodingApi
      * @param  string $point The location bias in the format &#39;latitude,longitude&#39; e.g. point&#x3D;45.93272,11.58803 (optional)
      * @param  string $provider Can be either, default, nominatim, opencagedata (optional)
      *
-     * @throws \GraphHopper\ApiException on non-2xx response
+     * @throws \GraphHopper/Swagger/Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \GraphHopper\Model\GeocodingResponse
+     * @return \GraphHopper/Swagger/Client\Model\GeocodingResponse
      */
     public function geocodeGet($key, $q = null, $locale = null, $limit = null, $reverse = null, $point = null, $provider = null)
     {
@@ -119,13 +119,13 @@ class GeocodingApi
      * @param  string $point The location bias in the format &#39;latitude,longitude&#39; e.g. point&#x3D;45.93272,11.58803 (optional)
      * @param  string $provider Can be either, default, nominatim, opencagedata (optional)
      *
-     * @throws \GraphHopper\ApiException on non-2xx response
+     * @throws \GraphHopper/Swagger/Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \GraphHopper\Model\GeocodingResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GraphHopper/Swagger/Client\Model\GeocodingResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function geocodeGetWithHttpInfo($key, $q = null, $locale = null, $limit = null, $reverse = null, $point = null, $provider = null)
     {
-        $returnType = '\GraphHopper\Model\GeocodingResponse';
+        $returnType = '\GraphHopper/Swagger/Client\Model\GeocodingResponse';
         $request = $this->geocodeGetRequest($key, $q, $locale, $limit, $reverse, $point, $provider);
 
         try {
@@ -177,7 +177,7 @@ class GeocodingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper\Model\GeocodingResponse',
+                        '\GraphHopper/Swagger/Client\Model\GeocodingResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class GeocodingApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper\Model\GHError',
+                        '\GraphHopper/Swagger/Client\Model\GHError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class GeocodingApi
      */
     public function geocodeGetAsyncWithHttpInfo($key, $q = null, $locale = null, $limit = null, $reverse = null, $point = null, $provider = null)
     {
-        $returnType = '\GraphHopper\Model\GeocodingResponse';
+        $returnType = '\GraphHopper/Swagger/Client\Model\GeocodingResponse';
         $request = $this->geocodeGetRequest($key, $q, $locale, $limit, $reverse, $point, $provider);
 
         return $this->client

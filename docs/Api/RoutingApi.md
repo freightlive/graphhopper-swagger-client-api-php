@@ -1,4 +1,4 @@
-# GraphHopper\RoutingApi
+# GraphHopper/Swagger/Client\RoutingApi
 
 All URIs are relative to *https://graphhopper.com/api/1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **routeGet**
-> \GraphHopper\Model\RouteResponse routeGet($point, $points_encoded, $key, $locale, $instructions, $vehicle, $elevation, $calc_points, $point_hint, $ch_disable, $weighting, $edge_traversal, $algorithm, $heading, $heading_penalty, $pass_through, $details, $round_trip_distance, $round_trip_seed, $alternative_route_max_paths, $alternative_route_max_weight_factor, $alternative_route_max_share_factor, $avoid)
+> \GraphHopper/Swagger/Client\Model\RouteResponse routeGet($point, $points_encoded, $key, $locale, $instructions, $vehicle, $elevation, $calc_points, $point_hint, $ch_disable, $weighting, $edge_traversal, $algorithm, $heading, $heading_penalty, $pass_through, $details, $round_trip_distance, $round_trip_seed, $alternative_route_max_paths, $alternative_route_max_weight_factor, $alternative_route_max_share_factor, $avoid)
 
 Routing Request
 
@@ -19,7 +19,7 @@ The GraphHopper Routing API allows to calculate route and implement navigation v
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new GraphHopper\Api\RoutingApi(
+$apiInstance = new GraphHopper/Swagger/Client\Api\RoutingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\GraphHopper\Model\RouteResponse**](../Model/RouteResponse.md)
+[**\GraphHopper/Swagger/Client\Model\RouteResponse**](../Model/RouteResponse.md)
 
 ### Authorization
 

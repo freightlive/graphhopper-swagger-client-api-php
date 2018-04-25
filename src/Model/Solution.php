@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Model;
+namespace GraphHopper/Swagger/Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper\ObjectSerializer;
+use \GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * Solution Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper
+ * @package     GraphHopper/Swagger/Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -64,8 +64,8 @@ class Solution implements ModelInterface, ArrayAccess
         'waiting_time' => 'int',
         'no_vehicles' => 'int',
         'no_unassigned' => 'int',
-        'routes' => '\GraphHopper\Model\Route[]',
-        'unassigned' => '\GraphHopper\Model\SolutionUnassigned'
+        'routes' => '\GraphHopper/Swagger/Client\Model\Route[]',
+        'unassigned' => '\GraphHopper/Swagger/Client\Model\SolutionUnassigned'
     ];
 
     /**
@@ -453,7 +453,7 @@ class Solution implements ModelInterface, ArrayAccess
     /**
      * Gets routes
      *
-     * @return \GraphHopper\Model\Route[]
+     * @return \GraphHopper/Swagger/Client\Model\Route[]
      */
     public function getRoutes()
     {
@@ -463,7 +463,7 @@ class Solution implements ModelInterface, ArrayAccess
     /**
      * Sets routes
      *
-     * @param \GraphHopper\Model\Route[] $routes An array of routes
+     * @param \GraphHopper/Swagger/Client\Model\Route[] $routes An array of routes
      *
      * @return $this
      */
@@ -477,7 +477,7 @@ class Solution implements ModelInterface, ArrayAccess
     /**
      * Gets unassigned
      *
-     * @return \GraphHopper\Model\SolutionUnassigned
+     * @return \GraphHopper/Swagger/Client\Model\SolutionUnassigned
      */
     public function getUnassigned()
     {
@@ -487,7 +487,7 @@ class Solution implements ModelInterface, ArrayAccess
     /**
      * Sets unassigned
      *
-     * @param \GraphHopper\Model\SolutionUnassigned $unassigned unassigned
+     * @param \GraphHopper/Swagger/Client\Model\SolutionUnassigned $unassigned unassigned
      *
      * @return $this
      */

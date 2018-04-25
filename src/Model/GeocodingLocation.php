@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Model;
+namespace GraphHopper/Swagger/Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper\ObjectSerializer;
+use \GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * GeocodingLocation Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper
+ * @package     GraphHopper/Swagger/Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class GeocodingLocation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'point' => '\GraphHopper\Model\GeocodingPoint',
+        'point' => '\GraphHopper/Swagger/Client\Model\GeocodingPoint',
         'osm_id' => 'string',
         'osm_type' => 'string',
         'osm_key' => 'string',
@@ -267,7 +267,7 @@ class GeocodingLocation implements ModelInterface, ArrayAccess
     /**
      * Gets point
      *
-     * @return \GraphHopper\Model\GeocodingPoint
+     * @return \GraphHopper/Swagger/Client\Model\GeocodingPoint
      */
     public function getPoint()
     {
@@ -277,7 +277,7 @@ class GeocodingLocation implements ModelInterface, ArrayAccess
     /**
      * Sets point
      *
-     * @param \GraphHopper\Model\GeocodingPoint $point point
+     * @param \GraphHopper/Swagger/Client\Model\GeocodingPoint $point point
      *
      * @return $this
      */

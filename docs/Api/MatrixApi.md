@@ -1,4 +1,4 @@
-# GraphHopper\MatrixApi
+# GraphHopper/Swagger/Client\MatrixApi
 
 All URIs are relative to *https://graphhopper.com/api/1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **matrixGet**
-> \GraphHopper\Model\MatrixResponse matrixGet($key, $point, $from_point, $to_point, $out_array, $vehicle)
+> \GraphHopper/Swagger/Client\Model\MatrixResponse matrixGet($key, $point, $from_point, $to_point, $out_array, $vehicle)
 
 Matrix API
 
@@ -20,7 +20,7 @@ The Matrix API is part of the GraphHopper Directions API and with this API you c
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new GraphHopper\Api\MatrixApi(
+$apiInstance = new GraphHopper/Swagger/Client\Api\MatrixApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\GraphHopper\Model\MatrixResponse**](../Model/MatrixResponse.md)
+[**\GraphHopper/Swagger/Client\Model\MatrixResponse**](../Model/MatrixResponse.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **matrixPost**
-> \GraphHopper\Model\MatrixResponse matrixPost($key, $body)
+> \GraphHopper/Swagger/Client\Model\MatrixResponse matrixPost($key, $body)
 
 Matrix API Post
 
@@ -79,13 +79,13 @@ The GET request has an URL length limitation, which hurts for many locations per
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new GraphHopper\Api\MatrixApi(
+$apiInstance = new GraphHopper/Swagger/Client\Api\MatrixApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $key = "key_example"; // string | Get your key at graphhopper.com
-$body = new \GraphHopper\Model\MatrixRequest(); // \GraphHopper\Model\MatrixRequest | 
+$body = new \GraphHopper/Swagger/Client\Model\MatrixRequest(); // \GraphHopper/Swagger/Client\Model\MatrixRequest | 
 
 try {
     $result = $apiInstance->matrixPost($key, $body);
@@ -101,11 +101,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **key** | **string**| Get your key at graphhopper.com |
- **body** | [**\GraphHopper\Model\MatrixRequest**](../Model/MatrixRequest.md)|  | [optional]
+ **body** | [**\GraphHopper/Swagger/Client\Model\MatrixRequest**](../Model/MatrixRequest.md)|  | [optional]
 
 ### Return type
 
-[**\GraphHopper\Model\MatrixResponse**](../Model/MatrixResponse.md)
+[**\GraphHopper/Swagger/Client\Model\MatrixResponse**](../Model/MatrixResponse.md)
 
 ### Authorization
 

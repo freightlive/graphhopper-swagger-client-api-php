@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Model;
+namespace GraphHopper/Swagger/Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper\ObjectSerializer;
+use \GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * CostMatrixData Class Doc Comment
  *
  * @category Class
  * @description JSON data of matrix response
- * @package     GraphHopper
+ * @package     GraphHopper/Swagger/Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class CostMatrixData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'times' => 'int[][]',
         'distances' => 'double[][]',
-        'info' => '\GraphHopper\Model\CostMatrixDataInfo'
+        'info' => '\GraphHopper/Swagger/Client\Model\CostMatrixDataInfo'
     ];
 
     /**
@@ -268,7 +268,7 @@ class CostMatrixData implements ModelInterface, ArrayAccess
     /**
      * Gets info
      *
-     * @return \GraphHopper\Model\CostMatrixDataInfo
+     * @return \GraphHopper/Swagger/Client\Model\CostMatrixDataInfo
      */
     public function getInfo()
     {
@@ -278,7 +278,7 @@ class CostMatrixData implements ModelInterface, ArrayAccess
     /**
      * Sets info
      *
-     * @param \GraphHopper\Model\CostMatrixDataInfo $info info
+     * @param \GraphHopper/Swagger/Client\Model\CostMatrixDataInfo $info info
      *
      * @return $this
      */

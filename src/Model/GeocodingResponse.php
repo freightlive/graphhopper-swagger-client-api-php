@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Model;
+namespace GraphHopper/Swagger/Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper\ObjectSerializer;
+use \GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * GeocodingResponse Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper
+ * @package     GraphHopper/Swagger/Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class GeocodingResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'hits' => '\GraphHopper\Model\GeocodingLocation[]',
+        'hits' => '\GraphHopper/Swagger/Client\Model\GeocodingLocation[]',
         'locale' => 'string'
     ];
 
@@ -213,7 +213,7 @@ class GeocodingResponse implements ModelInterface, ArrayAccess
     /**
      * Gets hits
      *
-     * @return \GraphHopper\Model\GeocodingLocation[]
+     * @return \GraphHopper/Swagger/Client\Model\GeocodingLocation[]
      */
     public function getHits()
     {
@@ -223,7 +223,7 @@ class GeocodingResponse implements ModelInterface, ArrayAccess
     /**
      * Sets hits
      *
-     * @param \GraphHopper\Model\GeocodingLocation[] $hits hits
+     * @param \GraphHopper/Swagger/Client\Model\GeocodingLocation[] $hits hits
      *
      * @return $this
      */

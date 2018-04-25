@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper
+ * @package  GraphHopper/Swagger/Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper\Model;
+namespace GraphHopper/Swagger/Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper\ObjectSerializer;
+use \GraphHopper/Swagger/Client\ObjectSerializer;
 
 /**
  * Shipment Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper
+ * @package     GraphHopper/Swagger/Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class Shipment implements ModelInterface, ArrayAccess
         'id' => 'string',
         'name' => 'string',
         'priority' => 'int',
-        'pickup' => '\GraphHopper\Model\Stop',
-        'delivery' => '\GraphHopper\Model\Stop',
+        'pickup' => '\GraphHopper/Swagger/Client\Model\Stop',
+        'delivery' => '\GraphHopper/Swagger/Client\Model\Stop',
         'size' => 'int[]',
         'required_skills' => 'string[]',
         'allowed_vehicles' => 'string[]',
@@ -333,7 +333,7 @@ class Shipment implements ModelInterface, ArrayAccess
     /**
      * Gets pickup
      *
-     * @return \GraphHopper\Model\Stop
+     * @return \GraphHopper/Swagger/Client\Model\Stop
      */
     public function getPickup()
     {
@@ -343,7 +343,7 @@ class Shipment implements ModelInterface, ArrayAccess
     /**
      * Sets pickup
      *
-     * @param \GraphHopper\Model\Stop $pickup pickup
+     * @param \GraphHopper/Swagger/Client\Model\Stop $pickup pickup
      *
      * @return $this
      */
@@ -357,7 +357,7 @@ class Shipment implements ModelInterface, ArrayAccess
     /**
      * Gets delivery
      *
-     * @return \GraphHopper\Model\Stop
+     * @return \GraphHopper/Swagger/Client\Model\Stop
      */
     public function getDelivery()
     {
@@ -367,7 +367,7 @@ class Shipment implements ModelInterface, ArrayAccess
     /**
      * Sets delivery
      *
-     * @param \GraphHopper\Model\Stop $delivery delivery
+     * @param \GraphHopper/Swagger/Client\Model\Stop $delivery delivery
      *
      * @return $this
      */
