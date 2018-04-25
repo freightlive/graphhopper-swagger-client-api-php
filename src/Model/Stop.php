@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper/Swagger/Client\Model;
+namespace GraphHopper\Swagger\Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper/Swagger/Client\ObjectSerializer;
+use \GraphHopper\Swagger\Client\ObjectSerializer;
 
 /**
  * Stop Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper/Swagger/Client
+ * @package     GraphHopper\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class Stop implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'address' => '\GraphHopper/Swagger/Client\Model\Address',
+        'address' => '\GraphHopper\Swagger\Client\Model\Address',
         'duration' => 'int',
         'preparation_time' => 'int',
-        'time_windows' => '\GraphHopper/Swagger/Client\Model\TimeWindow[]'
+        'time_windows' => '\GraphHopper\Swagger\Client\Model\TimeWindow[]'
     ];
 
     /**
@@ -225,7 +225,7 @@ class Stop implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \GraphHopper/Swagger/Client\Model\Address
+     * @return \GraphHopper\Swagger\Client\Model\Address
      */
     public function getAddress()
     {
@@ -235,7 +235,7 @@ class Stop implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \GraphHopper/Swagger/Client\Model\Address $address address
+     * @param \GraphHopper\Swagger\Client\Model\Address $address address
      *
      * @return $this
      */
@@ -297,7 +297,7 @@ class Stop implements ModelInterface, ArrayAccess
     /**
      * Gets time_windows
      *
-     * @return \GraphHopper/Swagger/Client\Model\TimeWindow[]
+     * @return \GraphHopper\Swagger\Client\Model\TimeWindow[]
      */
     public function getTimeWindows()
     {
@@ -307,7 +307,7 @@ class Stop implements ModelInterface, ArrayAccess
     /**
      * Sets time_windows
      *
-     * @param \GraphHopper/Swagger/Client\Model\TimeWindow[] $time_windows array of time windows. currently, only a single time window is allowed
+     * @param \GraphHopper\Swagger\Client\Model\TimeWindow[] $time_windows array of time windows. currently, only a single time window is allowed
      *
      * @return $this
      */

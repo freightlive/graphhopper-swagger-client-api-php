@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace GraphHopper/Swagger/Client;
+namespace GraphHopper\Swagger\Client;
 
 /**
  * ResponseInstructionsTest Class Doc Comment
@@ -35,7 +35,7 @@ namespace GraphHopper/Swagger/Client;
  * @category    Class */
 // * @description Contains information about the instructions for this route. The last instruction is always the Finish instruction and takes 0ms and 0meter. Keep in mind that instructions are currently under active development and can sometimes contain misleading information, so, make sure you always show an image of the map at the same time when navigating your users!
 /**
- * @package     GraphHopper/Swagger/Client
+ * @package     GraphHopper\Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen

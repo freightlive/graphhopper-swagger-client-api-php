@@ -1,4 +1,4 @@
-# GraphHopper/Swagger/Client\VrpApi
+# GraphHopper\Swagger\Client\VrpApi
 
 All URIs are relative to *https://graphhopper.com/api/1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **postVrp**
-> \GraphHopper/Swagger/Client\Model\JobId postVrp($key, $body)
+> \GraphHopper\Swagger\Client\Model\JobId postVrp($key, $body)
 
 Solves vehicle routing problems
 
@@ -19,13 +19,13 @@ This endpoint for solving vehicle routing problems, i.e. traveling salesman or v
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new GraphHopper/Swagger/Client\Api\VrpApi(
+$apiInstance = new GraphHopper\Swagger\Client\Api\VrpApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $key = "key_example"; // string | your API key
-$body = new \GraphHopper/Swagger/Client\Model\Request(); // \GraphHopper/Swagger/Client\Model\Request | Request object that contains the problem to be solved
+$body = new \GraphHopper\Swagger\Client\Model\Request(); // \GraphHopper\Swagger\Client\Model\Request | Request object that contains the problem to be solved
 
 try {
     $result = $apiInstance->postVrp($key, $body);
@@ -41,11 +41,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **key** | **string**| your API key |
- **body** | [**\GraphHopper/Swagger/Client\Model\Request**](../Model/Request.md)| Request object that contains the problem to be solved |
+ **body** | [**\GraphHopper\Swagger\Client\Model\Request**](../Model/Request.md)| Request object that contains the problem to be solved |
 
 ### Return type
 
-[**\GraphHopper/Swagger/Client\Model\JobId**](../Model/JobId.md)
+[**\GraphHopper\Swagger\Client\Model\JobId**](../Model/JobId.md)
 
 ### Authorization
 

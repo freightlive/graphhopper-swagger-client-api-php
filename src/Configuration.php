@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper/Swagger/Client;
+namespace GraphHopper\Swagger\Client;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -394,7 +394,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (GraphHopper/Swagger/Client) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (GraphHopper\Swagger\Client) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 1.0.0' . PHP_EOL;

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper/Swagger/Client\Model;
+namespace GraphHopper\Swagger\Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper/Swagger/Client\ObjectSerializer;
+use \GraphHopper\Swagger\Client\ObjectSerializer;
 
 /**
  * IsochroneResponsePolygon Class Doc Comment
  *
  * @category Class
  * @description A found path
- * @package     GraphHopper/Swagger/Client
+ * @package     GraphHopper\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,9 +57,9 @@ class IsochroneResponsePolygon implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'properties' => '\GraphHopper/Swagger/Client\Model\IsochroneResponsePolygonProperties',
+        'properties' => '\GraphHopper\Swagger\Client\Model\IsochroneResponsePolygonProperties',
         'type' => 'string',
-        'geometry' => '\GraphHopper/Swagger/Client\Model\IsochroneResponsePolygonGeometry'
+        'geometry' => '\GraphHopper\Swagger\Client\Model\IsochroneResponsePolygonGeometry'
     ];
 
     /**
@@ -220,7 +220,7 @@ class IsochroneResponsePolygon implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \GraphHopper/Swagger/Client\Model\IsochroneResponsePolygonProperties
+     * @return \GraphHopper\Swagger\Client\Model\IsochroneResponsePolygonProperties
      */
     public function getProperties()
     {
@@ -230,7 +230,7 @@ class IsochroneResponsePolygon implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \GraphHopper/Swagger/Client\Model\IsochroneResponsePolygonProperties $properties properties
+     * @param \GraphHopper\Swagger\Client\Model\IsochroneResponsePolygonProperties $properties properties
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class IsochroneResponsePolygon implements ModelInterface, ArrayAccess
     /**
      * Gets geometry
      *
-     * @return \GraphHopper/Swagger/Client\Model\IsochroneResponsePolygonGeometry
+     * @return \GraphHopper\Swagger\Client\Model\IsochroneResponsePolygonGeometry
      */
     public function getGeometry()
     {
@@ -278,7 +278,7 @@ class IsochroneResponsePolygon implements ModelInterface, ArrayAccess
     /**
      * Sets geometry
      *
-     * @param \GraphHopper/Swagger/Client\Model\IsochroneResponsePolygonGeometry $geometry geometry
+     * @param \GraphHopper\Swagger\Client\Model\IsochroneResponsePolygonGeometry $geometry geometry
      *
      * @return $this
      */

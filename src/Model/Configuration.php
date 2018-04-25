@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper/Swagger/Client\Model;
+namespace GraphHopper\Swagger\Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper/Swagger/Client\ObjectSerializer;
+use \GraphHopper\Swagger\Client\ObjectSerializer;
 
 /**
  * Configuration Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper/Swagger/Client
+ * @package     GraphHopper\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class Configuration implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'routing' => '\GraphHopper/Swagger/Client\Model\Routing'
+        'routing' => '\GraphHopper\Swagger\Client\Model\Routing'
     ];
 
     /**
@@ -207,7 +207,7 @@ class Configuration implements ModelInterface, ArrayAccess
     /**
      * Gets routing
      *
-     * @return \GraphHopper/Swagger/Client\Model\Routing
+     * @return \GraphHopper\Swagger\Client\Model\Routing
      */
     public function getRouting()
     {
@@ -217,7 +217,7 @@ class Configuration implements ModelInterface, ArrayAccess
     /**
      * Sets routing
      *
-     * @param \GraphHopper/Swagger/Client\Model\Routing $routing routing
+     * @param \GraphHopper\Swagger\Client\Model\Routing $routing routing
      *
      * @return $this
      */

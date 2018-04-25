@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper/Swagger/Client\API;
+namespace GraphHopper\Swagger\Client\API;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use GraphHopper/Swagger/Client\ApiException;
-use GraphHopper/Swagger/Client\Configuration;
-use GraphHopper/Swagger/Client\HeaderSelector;
-use GraphHopper/Swagger/Client\ObjectSerializer;
+use GraphHopper\Swagger\Client\ApiException;
+use GraphHopper\Swagger\Client\Configuration;
+use GraphHopper\Swagger\Client\HeaderSelector;
+use GraphHopper\Swagger\Client\ObjectSerializer;
 
 /**
  * MatrixApi Class Doc Comment
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -95,9 +95,9 @@ class MatrixApi
      * @param  string[] $out_array Specifies which arrays should be included in the response. Specify one or more of the following options &#39;weights&#39;, &#39;times&#39;, &#39;distances&#39;. To specify more than one array use e.g. out_array&#x3D;times&amp;out_array&#x3D;distances. The units of the entries of distances are meters, of times are seconds and of weights is arbitrary and it can differ for different vehicles or versions of this API. (optional)
      * @param  string $vehicle The vehicle for which the route should be calculated. Other vehicles are foot, small_truck etc (optional, default to car)
      *
-     * @throws \GraphHopper/Swagger/Client\ApiException on non-2xx response
+     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \GraphHopper/Swagger/Client\Model\MatrixResponse
+     * @return \GraphHopper\Swagger\Client\Model\MatrixResponse
      */
     public function matrixGet($key, $point = null, $from_point = null, $to_point = null, $out_array = null, $vehicle = 'car')
     {
@@ -117,13 +117,13 @@ class MatrixApi
      * @param  string[] $out_array Specifies which arrays should be included in the response. Specify one or more of the following options &#39;weights&#39;, &#39;times&#39;, &#39;distances&#39;. To specify more than one array use e.g. out_array&#x3D;times&amp;out_array&#x3D;distances. The units of the entries of distances are meters, of times are seconds and of weights is arbitrary and it can differ for different vehicles or versions of this API. (optional)
      * @param  string $vehicle The vehicle for which the route should be calculated. Other vehicles are foot, small_truck etc (optional, default to car)
      *
-     * @throws \GraphHopper/Swagger/Client\ApiException on non-2xx response
+     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \GraphHopper/Swagger/Client\Model\MatrixResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GraphHopper\Swagger\Client\Model\MatrixResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function matrixGetWithHttpInfo($key, $point = null, $from_point = null, $to_point = null, $out_array = null, $vehicle = 'car')
     {
-        $returnType = '\GraphHopper/Swagger/Client\Model\MatrixResponse';
+        $returnType = '\GraphHopper\Swagger\Client\Model\MatrixResponse';
         $request = $this->matrixGetRequest($key, $point, $from_point, $to_point, $out_array, $vehicle);
 
         try {
@@ -175,7 +175,7 @@ class MatrixApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper/Swagger/Client\Model\MatrixResponse',
+                        '\GraphHopper\Swagger\Client\Model\MatrixResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -183,7 +183,7 @@ class MatrixApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper/Swagger/Client\Model\GHError',
+                        '\GraphHopper\Swagger\Client\Model\GHError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -235,7 +235,7 @@ class MatrixApi
      */
     public function matrixGetAsyncWithHttpInfo($key, $point = null, $from_point = null, $to_point = null, $out_array = null, $vehicle = 'car')
     {
-        $returnType = '\GraphHopper/Swagger/Client\Model\MatrixResponse';
+        $returnType = '\GraphHopper\Swagger\Client\Model\MatrixResponse';
         $request = $this->matrixGetRequest($key, $point, $from_point, $to_point, $out_array, $vehicle);
 
         return $this->client
@@ -412,11 +412,11 @@ class MatrixApi
      * Matrix API Post
      *
      * @param  string $key Get your key at graphhopper.com (required)
-     * @param  \GraphHopper/Swagger/Client\Model\MatrixRequest $body body (optional)
+     * @param  \GraphHopper\Swagger\Client\Model\MatrixRequest $body body (optional)
      *
-     * @throws \GraphHopper/Swagger/Client\ApiException on non-2xx response
+     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \GraphHopper/Swagger/Client\Model\MatrixResponse
+     * @return \GraphHopper\Swagger\Client\Model\MatrixResponse
      */
     public function matrixPost($key, $body = null)
     {
@@ -430,15 +430,15 @@ class MatrixApi
      * Matrix API Post
      *
      * @param  string $key Get your key at graphhopper.com (required)
-     * @param  \GraphHopper/Swagger/Client\Model\MatrixRequest $body (optional)
+     * @param  \GraphHopper\Swagger\Client\Model\MatrixRequest $body (optional)
      *
-     * @throws \GraphHopper/Swagger/Client\ApiException on non-2xx response
+     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \GraphHopper/Swagger/Client\Model\MatrixResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GraphHopper\Swagger\Client\Model\MatrixResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function matrixPostWithHttpInfo($key, $body = null)
     {
-        $returnType = '\GraphHopper/Swagger/Client\Model\MatrixResponse';
+        $returnType = '\GraphHopper\Swagger\Client\Model\MatrixResponse';
         $request = $this->matrixPostRequest($key, $body);
 
         try {
@@ -490,7 +490,7 @@ class MatrixApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper/Swagger/Client\Model\MatrixResponse',
+                        '\GraphHopper\Swagger\Client\Model\MatrixResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -498,7 +498,7 @@ class MatrixApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper/Swagger/Client\Model\GHError',
+                        '\GraphHopper\Swagger\Client\Model\GHError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -514,7 +514,7 @@ class MatrixApi
      * Matrix API Post
      *
      * @param  string $key Get your key at graphhopper.com (required)
-     * @param  \GraphHopper/Swagger/Client\Model\MatrixRequest $body (optional)
+     * @param  \GraphHopper\Swagger\Client\Model\MatrixRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -535,14 +535,14 @@ class MatrixApi
      * Matrix API Post
      *
      * @param  string $key Get your key at graphhopper.com (required)
-     * @param  \GraphHopper/Swagger/Client\Model\MatrixRequest $body (optional)
+     * @param  \GraphHopper\Swagger\Client\Model\MatrixRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function matrixPostAsyncWithHttpInfo($key, $body = null)
     {
-        $returnType = '\GraphHopper/Swagger/Client\Model\MatrixResponse';
+        $returnType = '\GraphHopper\Swagger\Client\Model\MatrixResponse';
         $request = $this->matrixPostRequest($key, $body);
 
         return $this->client
@@ -586,7 +586,7 @@ class MatrixApi
      * Create request for operation 'matrixPost'
      *
      * @param  string $key Get your key at graphhopper.com (required)
-     * @param  \GraphHopper/Swagger/Client\Model\MatrixRequest $body (optional)
+     * @param  \GraphHopper\Swagger\Client\Model\MatrixRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

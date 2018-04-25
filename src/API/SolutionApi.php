@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper/Swagger/Client\API;
+namespace GraphHopper\Swagger\Client\API;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use GraphHopper/Swagger/Client\ApiException;
-use GraphHopper/Swagger/Client\Configuration;
-use GraphHopper/Swagger/Client\HeaderSelector;
-use GraphHopper/Swagger/Client\ObjectSerializer;
+use GraphHopper\Swagger\Client\ApiException;
+use GraphHopper\Swagger\Client\Configuration;
+use GraphHopper\Swagger\Client\HeaderSelector;
+use GraphHopper\Swagger\Client\ObjectSerializer;
 
 /**
  * SolutionApi Class Doc Comment
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -91,9 +91,9 @@ class SolutionApi
      * @param  string $key your API key (required)
      * @param  string $job_id Request solution with jobId (required)
      *
-     * @throws \GraphHopper/Swagger/Client\ApiException on non-2xx response
+     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \GraphHopper/Swagger/Client\Model\Response
+     * @return \GraphHopper\Swagger\Client\Model\Response
      */
     public function getSolution($key, $job_id)
     {
@@ -109,13 +109,13 @@ class SolutionApi
      * @param  string $key your API key (required)
      * @param  string $job_id Request solution with jobId (required)
      *
-     * @throws \GraphHopper/Swagger/Client\ApiException on non-2xx response
+     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \GraphHopper/Swagger/Client\Model\Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GraphHopper\Swagger\Client\Model\Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSolutionWithHttpInfo($key, $job_id)
     {
-        $returnType = '\GraphHopper/Swagger/Client\Model\Response';
+        $returnType = '\GraphHopper\Swagger\Client\Model\Response';
         $request = $this->getSolutionRequest($key, $job_id);
 
         try {
@@ -167,7 +167,7 @@ class SolutionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper/Swagger/Client\Model\Response',
+                        '\GraphHopper\Swagger\Client\Model\Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,7 +211,7 @@ class SolutionApi
      */
     public function getSolutionAsyncWithHttpInfo($key, $job_id)
     {
-        $returnType = '\GraphHopper/Swagger/Client\Model\Response';
+        $returnType = '\GraphHopper\Swagger\Client\Model\Response';
         $request = $this->getSolutionRequest($key, $job_id);
 
         return $this->client

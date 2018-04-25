@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper/Swagger/Client\Model;
+namespace GraphHopper\Swagger\Client\Model;
 
 use \ArrayAccess;
-use \GraphHopper/Swagger/Client\ObjectSerializer;
+use \GraphHopper\Swagger\Client\ObjectSerializer;
 
 /**
  * MatrixResponse Class Doc Comment
  *
  * @category Class
- * @package     GraphHopper/Swagger/Client
+ * @package     GraphHopper\Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class MatrixResponse implements ModelInterface, ArrayAccess
         'distances' => 'float[][]',
         'times' => 'float[][]',
         'weights' => 'double[][]',
-        'info' => '\GraphHopper/Swagger/Client\Model\ResponseInfo'
+        'info' => '\GraphHopper\Swagger\Client\Model\ResponseInfo'
     ];
 
     /**
@@ -297,7 +297,7 @@ class MatrixResponse implements ModelInterface, ArrayAccess
     /**
      * Gets info
      *
-     * @return \GraphHopper/Swagger/Client\Model\ResponseInfo
+     * @return \GraphHopper\Swagger\Client\Model\ResponseInfo
      */
     public function getInfo()
     {
@@ -307,7 +307,7 @@ class MatrixResponse implements ModelInterface, ArrayAccess
     /**
      * Sets info
      *
-     * @param \GraphHopper/Swagger/Client\Model\ResponseInfo $info info
+     * @param \GraphHopper\Swagger\Client\Model\ResponseInfo $info info
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace GraphHopper/Swagger/Client\API;
+namespace GraphHopper\Swagger\Client\API;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use GraphHopper/Swagger/Client\ApiException;
-use GraphHopper/Swagger/Client\Configuration;
-use GraphHopper/Swagger/Client\HeaderSelector;
-use GraphHopper/Swagger/Client\ObjectSerializer;
+use GraphHopper\Swagger\Client\ApiException;
+use GraphHopper\Swagger\Client\Configuration;
+use GraphHopper\Swagger\Client\HeaderSelector;
+use GraphHopper\Swagger\Client\ObjectSerializer;
 
 /**
  * RoutingApi Class Doc Comment
  *
  * @category Class
- * @package  GraphHopper/Swagger/Client
+ * @package  GraphHopper\Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -112,9 +112,9 @@ class RoutingApi
      * @param  int $alternative_route_max_share_factor If &#x60;algorithm&#x3D;alternative_route&#x60; this parameter specifies how much alternatives routes can have maximum in common with the optimal route. Increasing can lead to worse alternatives. (optional)
      * @param  string $avoid comma separate list to avoid certain roads. You can avoid motorway, ferry, tunnel or track (optional)
      *
-     * @throws \GraphHopper/Swagger/Client\ApiException on non-2xx response
+     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \GraphHopper/Swagger/Client\Model\RouteResponse
+     * @return \GraphHopper\Swagger\Client\Model\RouteResponse
      */
     public function routeGet($point, $points_encoded, $key, $locale = null, $instructions = null, $vehicle = null, $elevation = null, $calc_points = null, $point_hint = null, $ch_disable = null, $weighting = null, $edge_traversal = null, $algorithm = null, $heading = null, $heading_penalty = null, $pass_through = null, $details = null, $round_trip_distance = null, $round_trip_seed = null, $alternative_route_max_paths = null, $alternative_route_max_weight_factor = null, $alternative_route_max_share_factor = null, $avoid = null)
     {
@@ -151,13 +151,13 @@ class RoutingApi
      * @param  int $alternative_route_max_share_factor If &#x60;algorithm&#x3D;alternative_route&#x60; this parameter specifies how much alternatives routes can have maximum in common with the optimal route. Increasing can lead to worse alternatives. (optional)
      * @param  string $avoid comma separate list to avoid certain roads. You can avoid motorway, ferry, tunnel or track (optional)
      *
-     * @throws \GraphHopper/Swagger/Client\ApiException on non-2xx response
+     * @throws \GraphHopper\Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \GraphHopper/Swagger/Client\Model\RouteResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GraphHopper\Swagger\Client\Model\RouteResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function routeGetWithHttpInfo($point, $points_encoded, $key, $locale = null, $instructions = null, $vehicle = null, $elevation = null, $calc_points = null, $point_hint = null, $ch_disable = null, $weighting = null, $edge_traversal = null, $algorithm = null, $heading = null, $heading_penalty = null, $pass_through = null, $details = null, $round_trip_distance = null, $round_trip_seed = null, $alternative_route_max_paths = null, $alternative_route_max_weight_factor = null, $alternative_route_max_share_factor = null, $avoid = null)
     {
-        $returnType = '\GraphHopper/Swagger/Client\Model\RouteResponse';
+        $returnType = '\GraphHopper\Swagger\Client\Model\RouteResponse';
         $request = $this->routeGetRequest($point, $points_encoded, $key, $locale, $instructions, $vehicle, $elevation, $calc_points, $point_hint, $ch_disable, $weighting, $edge_traversal, $algorithm, $heading, $heading_penalty, $pass_through, $details, $round_trip_distance, $round_trip_seed, $alternative_route_max_paths, $alternative_route_max_weight_factor, $alternative_route_max_share_factor, $avoid);
 
         try {
@@ -209,7 +209,7 @@ class RoutingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper/Swagger/Client\Model\RouteResponse',
+                        '\GraphHopper\Swagger\Client\Model\RouteResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -217,7 +217,7 @@ class RoutingApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\GraphHopper/Swagger/Client\Model\GHError',
+                        '\GraphHopper\Swagger\Client\Model\GHError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -303,7 +303,7 @@ class RoutingApi
      */
     public function routeGetAsyncWithHttpInfo($point, $points_encoded, $key, $locale = null, $instructions = null, $vehicle = null, $elevation = null, $calc_points = null, $point_hint = null, $ch_disable = null, $weighting = null, $edge_traversal = null, $algorithm = null, $heading = null, $heading_penalty = null, $pass_through = null, $details = null, $round_trip_distance = null, $round_trip_seed = null, $alternative_route_max_paths = null, $alternative_route_max_weight_factor = null, $alternative_route_max_share_factor = null, $avoid = null)
     {
-        $returnType = '\GraphHopper/Swagger/Client\Model\RouteResponse';
+        $returnType = '\GraphHopper\Swagger\Client\Model\RouteResponse';
         $request = $this->routeGetRequest($point, $points_encoded, $key, $locale, $instructions, $vehicle, $elevation, $calc_points, $point_hint, $ch_disable, $weighting, $edge_traversal, $algorithm, $heading, $heading_penalty, $pass_through, $details, $round_trip_distance, $round_trip_seed, $alternative_route_max_paths, $alternative_route_max_weight_factor, $alternative_route_max_share_factor, $avoid);
 
         return $this->client

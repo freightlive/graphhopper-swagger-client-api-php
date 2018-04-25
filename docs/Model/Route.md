@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **transport_time** | **int** | transport time of route in seconds | [optional] 
 **completion_time** | **int** | completion time of route in seconds | [optional] 
 **waiting_time** | **int** | waiting time of route in seconds | [optional] 
-**activities** | [**\GraphHopper/Swagger/Client\Model\Activity[]**](Activity.md) | array of activities | [optional] 
-**points** | [**\GraphHopper/Swagger/Client\Model\RoutePoint[]**](RoutePoint.md) | array of route planning points | [optional] 
+**activities** | [**\GraphHopper\Swagger\Client\Model\Activity[]**](Activity.md) | array of activities | [optional] 
+**points** | [**\GraphHopper\Swagger\Client\Model\RoutePoint[]**](RoutePoint.md) | array of route planning points | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

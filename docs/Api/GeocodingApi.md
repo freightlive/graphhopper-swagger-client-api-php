@@ -1,4 +1,4 @@
-# GraphHopper/Swagger/Client\GeocodingApi
+# GraphHopper\Swagger\Client\GeocodingApi
 
 All URIs are relative to *https://graphhopper.com/api/1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **geocodeGet**
-> \GraphHopper/Swagger/Client\Model\GeocodingResponse geocodeGet($key, $q, $locale, $limit, $reverse, $point, $provider)
+> \GraphHopper\Swagger\Client\Model\GeocodingResponse geocodeGet($key, $q, $locale, $limit, $reverse, $point, $provider)
 
 Execute a Geocoding request
 
@@ -19,7 +19,7 @@ This endpoint provides forward and reverse geocoding. For more details, review t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new GraphHopper/Swagger/Client\Api\GeocodingApi(
+$apiInstance = new GraphHopper\Swagger\Client\Api\GeocodingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\GraphHopper/Swagger/Client\Model\GeocodingResponse**](../Model/GeocodingResponse.md)
+[**\GraphHopper\Swagger\Client\Model\GeocodingResponse**](../Model/GeocodingResponse.md)
 
 ### Authorization
 
