@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **waiting_time** | **int** | waiting time at this activity in seconds | [optional] 
 **distance** | **int** | cumulated distance from start to this activity in m | [optional] 
 **driving_time** | **int** | driving time of driver in seconds | [optional] 
+**preparation_time** | **int** |  | [optional] 
 **load_before** | **int[]** | Array with size/capacity dimensions before this activity | [optional] 
 **load_after** | **int[]** | Array with size/capacity dimensions after this activity | [optional] 
 
