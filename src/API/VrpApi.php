@@ -312,6 +312,11 @@ class VrpApi
             if ($httpBody instanceof \stdClass && $headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($httpBody);
             }
+            
+            if(strlen($httpBody) > 1000000) {
+				$httpBody = gzencode($httpBody);
+				$headers['Content-Encoding'] = 'gzip';
+			}
         } elseif (count($formParams) > 0) {
             if ($multipart) {
                 $multipartContents = [];
